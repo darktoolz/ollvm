@@ -12,8 +12,8 @@ index cbc077e..d6b1ebf 100755
 +  cp -rf llvm-project ..
 +
 +  cd ../llvm-project
-+  patch -p1 < ../../Utils.cpp.patch
-+  patch -p1 < ../../Function.h.patch
++  patch -p1 < ../Utils.cpp.patch
++  patch -p1 < ../Function.h.patch
 +  cd ..
 +fi
 +
