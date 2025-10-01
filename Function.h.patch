@@ -1,0 +1,13 @@
+diff --git a/llvm/include/llvm/IR/Function.h b/llvm/include/llvm/IR/Function.h
+index 93cf0d27e..be5a11247 100644
+--- a/llvm/include/llvm/IR/Function.h
++++ b/llvm/include/llvm/IR/Function.h
+@@ -719,7 +719,7 @@ public:
+   /// \Returns \p ToIt.
+   Function::iterator erase(Function::iterator FromIt, Function::iterator ToIt);
+ 
+-private:
++public:
+   // These need access to the underlying BB list.
+   friend void BasicBlock::removeFromParent();
+   friend iplist<BasicBlock>::iterator BasicBlock::eraseFromParent();

@@ -1,0 +1,10 @@
+--- a/llvm/lib/Passes/Obfuscation/Utils.cpp
++++ b/llvm/lib/Passes/Obfuscation/Utils.cpp
+@@ -11,6 +11,7 @@
+  */
+ #include "Utils.h"
+ #include "llvm/IR/IntrinsicInst.h"
++#include "llvm/Transforms/Scalar/Reg2Mem.h"
+ 
+ using namespace llvm;
+ using std::vector;
