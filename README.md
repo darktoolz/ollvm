@@ -3,9 +3,15 @@
 docker pull darktoolz/ollvm:17-mingw
 ```
 
-# Credits
-https://github.com/BloodSharp/ollvm17
-https://github.com/DreamSoule/ollvm17
-https://github.com/heroims/obfuscator
-https://github.com/mstorsjo/llvm-mingw.git
-https://github.com/obfuscator-llvm/obfuscator
+# credits
+[Obfuscation LLVM 17](https://github.com/BloodSharp/ollvm17)
+
+[DreamSoule's ollvm17](https://github.com/DreamSoule/ollvm17)
+
+[LLVM14 and Later](https://github.com/heroims/obfuscator)
+
+[An LLVM/Clang/LLD based mingw-w64 toolchain](https://github.com/mstorsjo/llvm-mingw.git)
+
+[Obfuscator-LLVM](https://github.com/obfuscator-llvm/obfuscator)
+
+[LLVM](https://github.com/llvm/llvm-project)
