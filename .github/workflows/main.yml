@@ -2,14 +2,12 @@ name: docker
 
 on:
   push:
-    branches:
-      - main
     paths-ignore:
       - '**.md'
     tags:
       - '*'
 env:
-  DOCKER_REPO: ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:${{ github.event.ref }}
+  DOCKER_REPO: ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:${{ github.ref_name }}
 
 jobs:
   docker:
