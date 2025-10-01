@@ -9,7 +9,7 @@ on:
     tags:
       - '*'
 env:
-  DOCKER_REPO: ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:${{ github.ref_name }}
+  DOCKER_REPO: ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:${{ github.event.ref }}
 
 jobs:
   docker:
