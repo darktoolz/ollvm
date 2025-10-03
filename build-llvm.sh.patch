@@ -1,20 +1,11 @@
-diff --git a/build-llvm.sh b/build-llvm.sh
-index cbc077e..d6b1ebf 100755
 --- a/build-llvm.sh
 +++ b/build-llvm.sh
-@@ -136,6 +136,17 @@ else
+@@ -136,6 +136,10 @@ else
      esac
  fi
  
-+if [ ! -d llvm-project/llvm/lib/Passes/Obfuscation ]; then
-+  git clone https://github.com/BloodSharp/ollvm17.git ollvm17 || exit 1
-+  cd ollvm17
-+  cp -rf llvm-project ..
-+
-+  cd ../llvm-project
-+  patch -p1 < ../Utils.cpp.patch
-+  patch -p1 < ../Function.h.patch
-+  cd ..
++if [ ! -d llvm-project/llvm/lib/Transforms/Obfuscation ]; then
++  patch -p1 < obfuscator.patch
 +fi
 +
  if command -v ninja >/dev/null; then

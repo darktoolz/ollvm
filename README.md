@@ -1,9 +1,11 @@
 # ollvm mingw docker
 ```
-docker pull darktoolz/ollvm:17-mingw
+docker pull darktoolz/ollvm:18-mingw
 ```
 
 # credits
+[Obfuscation LLVM 18](https://github.com/sr-tream/obfuscator)
+
 [Obfuscation LLVM 17](https://github.com/BloodSharp/ollvm17)
 
 [DreamSoule's ollvm17](https://github.com/DreamSoule/ollvm17)
