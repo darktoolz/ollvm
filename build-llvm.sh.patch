@@ -5,7 +5,7 @@
  fi
  
 +if [ -d llvm-project ] && [ ! -d llvm-project/llvm/lib/Transforms/Obfuscation ]; then
-+  cd llvm-project && patch -p1 < ../obfuscator.patch
++  cd llvm-project && patch -p1 < ../obfuscator.patch && cd ..
 +fi
 +
  if command -v ninja >/dev/null; then
