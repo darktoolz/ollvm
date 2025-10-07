@@ -4,8 +4,8 @@
      esac
  fi
  
-+if [ ! -d llvm-project/llvm/lib/Transforms/Obfuscation ]; then
-+  patch -p1 < obfuscator.patch
++if [ -d llvm-project ] && [ ! -d llvm-project/llvm/lib/Transforms/Obfuscation ]; then
++  cd llvm-project && patch -p1 < ../obfuscator.patch
 +fi
 +
  if command -v ninja >/dev/null; then
