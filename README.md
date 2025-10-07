@@ -1,6 +1,6 @@
 # ollvm mingw docker
 ```
-docker pull darktoolz/ollvm:18-mingw
+docker pull darktool/ollvm:18-mingw
 ```
 
 # credits
