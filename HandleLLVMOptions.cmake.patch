@@ -1,0 +1,11 @@
+--- a/llvm/cmake/modules/HandleLLVMOptions.cmake
++++ b/llvm/cmake/modules/HandleLLVMOptions.cmake
+@@ -298,7 +298,7 @@ function(has_msvc_incremental_no_flag flags incr_no_flag_on)
+ endfunction()
+ 
+ if( LLVM_ENABLE_LLD )
+-  if ( LLVM_USE_LINKER )
++  if (LLVM_USE_LINKER AND NOT LLVM_USE_LINKER MATCHES "lld")
+     message(FATAL_ERROR "LLVM_ENABLE_LLD and LLVM_USE_LINKER can't be set at the same time")
+   endif()
+ 
