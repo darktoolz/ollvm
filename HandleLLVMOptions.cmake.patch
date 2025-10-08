@@ -5,7 +5,8 @@
  
  if( LLVM_ENABLE_LLD )
 -  if ( LLVM_USE_LINKER )
-+  if (LLVM_USE_LINKER AND NOT LLVM_USE_LINKER MATCHES "lld")
-     message(FATAL_ERROR "LLVM_ENABLE_LLD and LLVM_USE_LINKER can't be set at the same time")
++  if (LLVM_USE_LINKER AND NOT LLVM_USE_LINKER MATCHES ".*lld.*")
+-    message(FATAL_ERROR "LLVM_ENABLE_LLD and LLVM_USE_LINKER can't be set at the same time")
++    message(WARNING "LLVM_ENABLE_LLD and LLVM_USE_LINKER can't be set at the same time")
    endif()
  
